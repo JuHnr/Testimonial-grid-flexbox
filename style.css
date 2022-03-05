@@ -1,0 +1,153 @@
+ body
+ {
+   color: white;
+   font-size: 13px;
+   font-family: 'Barlow Semi Condensed', sans-serif;
+   background-color: hsl(210, 46%, 95%);
+ }
+
+ .opacity70
+ {
+   opacity: 70%;
+ }
+
+ .status
+ {
+   opacity: 50%;
+   font-size: 11px;
+ }
+
+ 
+ .card
+ {
+   padding: 25px;
+   margin: 15px;
+   box-shadow: 20px 10px 25px 5px hsl(0, 0%, 81%) ;
+   border-radius: 10px;
+ }
+
+.card-top
+{
+  display: flex;
+  align-items: center;
+}
+
+ .card-img
+ {
+   border-radius: 50%;
+   border: 2px solid;
+   border-color: rgba(255, 255, 255, 0.5);
+   height: 32px;
+   width: auto;
+ }
+
+.card-top .name
+{
+   margin-left: 22px;
+}
+
+.name p
+{
+  margin: 0;
+}
+
+.highlight
+{
+  font-size: 20px;
+}
+
+.quote
+{
+  line-height: 1.5;
+}
+
+
+ .one
+ {
+   background-color: hsl(263, 55%, 52%);
+   background-image: url('images/bg-pattern-quotation.svg');
+   background-position: right 24px top;
+   background-repeat: no-repeat;
+ }
+
+ .two
+ {
+   background-color: hsl(217, 19%, 35%);
+ }
+
+ .three
+ {
+   background-color: white;
+   color: hsl(217, 19%, 35%);
+   width: 100%;
+ }
+
+
+ .four
+ {
+   background-color: hsl(219, 29%, 14%);
+ }
+
+ .five
+ {
+   background-color: white;
+   color: hsl(217, 19%, 35%);
+ }
+
+
+/* flexbox */
+
+.container
+{
+  display: flex;
+  margin: 140px auto;
+ }
+
+ .box-left 
+ {
+  flex-basis: 75%;
+ }
+
+.box-right
+{
+  flex-basis: 25%;
+}
+
+.box-top
+{
+  display: flex;
+}
+
+.box-bottom
+{
+  display: flex;
+}
+
+
+@media all and (max-width: 768px)
+{
+  .container
+  {
+    flex-wrap: wrap;
+  }
+
+  .box-top
+  {
+    flex-wrap: wrap;
+  }
+
+  .box-bottom
+  {
+    flex-wrap: wrap;
+  }
+
+   .box-left 
+  {
+    flex-basis: 100%;
+  }
+
+  .box-right
+  {
+    flex-basis: 100%;
+  }
+}
